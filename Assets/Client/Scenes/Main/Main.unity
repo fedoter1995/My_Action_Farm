@@ -374,6 +374,14 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 165952188339316158, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.122191
+      objectReference: {fileID: 0}
+    - target: {fileID: 165952188339316158, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.34500778
+      objectReference: {fileID: 0}
+    - target: {fileID: 165952188339316158, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
       propertyPath: m_LocalRotation.y
       value: -0.000000016149906
       objectReference: {fileID: 0}
@@ -431,7 +439,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6014292800111732553, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
       propertyPath: m_Constraints
-      value: 116
+      value: 112
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.0012555048
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 9.0059395
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.122191
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.9385998
+      objectReference: {fileID: 0}
+    - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0.34500778
       objectReference: {fileID: 0}
     - target: {fileID: 7045632617458108531, guid: ce7a1f45766bdad438b5bcd2e8780a9f, type: 3}
       propertyPath: m_LocalRotation.y
