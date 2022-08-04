@@ -1,7 +1,7 @@
 using UnityEngine;
 public interface IEquipmentStats
 {
-    int ID { get; }
+    string ID { get; }
     Sprite Icon { get; }
     string Title { get; }
     int Price { get; }

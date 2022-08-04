@@ -86,7 +86,7 @@ public sealed class Backpack : Equipment
                 slotWithItem.item.ItemGameObject.transform.SetParent(barn.transform);
                 slotWithItem.item.ItemGameObject.transform.DOMove(barn.transform.position, 1f);
                 RemooveItem(slotWithItem);
-                yield return new WaitForEndOfFrame();
+                yield return new WaitForSeconds(0.02f);
             }
             else
             {

@@ -10,7 +10,7 @@ public abstract class EquipmentPoint : MonoBehaviour
     public AnimationEventsHandler Handler => handler;
 
 
-    public void ChngeCurrentEquipment(Equipment newItem)
+    public void ChangeCurrentEquipment(Equipment newItem)
     {        
         currentEquipment = newItem;
     }

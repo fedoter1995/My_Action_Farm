@@ -19,6 +19,7 @@ public sealed class Equipments : MonoBehaviour
     {   
         var weapon = Instantiate(prefab, weaponPoint.transform);
         weapon.ChangeActivity();
+
         return weapon;
     }
     private Backpack CreateBackpack(Backpack prefab)
@@ -33,6 +34,12 @@ public sealed class Equipments : MonoBehaviour
         InitBackpack();
         InitWeapon();
     }
+    public void UpgradeWeapon(Weapon newWeapon)
+    {
+        Destroy(CurrentWeapon.gameObject);
+        CurrentWeapon = CreateWeapon(newWeapon);
+        weaponPoint.ChangeCurrentEquipment(CurrentWeapon);
+    }
     private void GetPoint<T>(out T point)
     {
         try
@@ -44,7 +51,7 @@ public sealed class Equipments : MonoBehaviour
             throw new Exception($"can't get a component type : {typeof(T)} ");
         }
     }
-
+    
     private void InitWeapon()
     {
         if (_weapon == null)
@@ -56,7 +63,7 @@ public sealed class Equipments : MonoBehaviour
         {
             CurrentWeapon = CreateWeapon(_weapon);
         }
-        weaponPoint.ChngeCurrentEquipment(CurrentWeapon);
+        weaponPoint.ChangeCurrentEquipment(CurrentWeapon);
     }
     private void InitBackpack()
     {
@@ -70,6 +77,6 @@ public sealed class Equipments : MonoBehaviour
             CurrentBackpack = CreateBackpack(_backpack);
         }
         Interactor.BackpackInteractor = CurrentBackpack;
-        spaceForBackpack.ChngeCurrentEquipment(CurrentBackpack);
+        spaceForBackpack.ChangeCurrentEquipment(CurrentBackpack);
     }
 }
